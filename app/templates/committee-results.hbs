@@ -1,13 +1,24 @@
 <div class="house-list">
+  <h4><span class="glyphicon glyphicon-star"></span> = denotes committee has a subcommittee</h4>
   <h2>House Committees</h2>
   {{#each model.house as |committee|}}
-    <li>{{committee.name}} ({{committee.chamber}})</li>
+    <li>
+      {{#link-to 'subcommittee-results' committee.committee_id}}
+      {{committee.name}} ({{committee.chamber}})
+      {{subcommittee-counter committee=committee class="inline"}}
+      {{/link-to}}
+    </li>
   {{/each}}
 </div>
 
 <div class="senate-list">
   <h2>Senate Committees</h2>
   {{#each model.senate as |committee|}}
-    <li>{{committee.name}} ({{committee.chamber}})</li>
+    <li>
+      {{#link-to 'subcommittee-results' committee.committee_id}}
+      {{committee.name}} ({{committee.chamber}})
+      {{subcommittee-counter committee=committee class="inline"}}
+      {{/link-to}}
+    </li>
   {{/each}}
 </div>

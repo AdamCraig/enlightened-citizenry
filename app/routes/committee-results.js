@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
-var urlHouse = 'http://congress.api.sunlightfoundation.com/committees?chamber=house&apikey=ab3a673b4f5e4db09dad0ec880a7ac8a';
-var urlSenate = 'http://congress.api.sunlightfoundation.com/committees?chamber=senate&apikey=ab3a673b4f5e4db09dad0ec880a7ac8a';
+var urlHouse = 'http://congress.api.sunlightfoundation.com/committees?chamber=house&subcommittee=false&apikey=ab3a673b4f5e4db09dad0ec880a7ac8a';
+var urlSenate = 'http://congress.api.sunlightfoundation.com/committees?chamber=senate&subcommittee=false&apikey=ab3a673b4f5e4db09dad0ec880a7ac8a';
 
 export default Ember.Route.extend({
   model: function() {
