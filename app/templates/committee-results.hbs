@@ -1,3 +1,13 @@
-{{#each model as |committee|}}
-  <li>{{committee.name}}</li> ({{committee.chamber}})
-{{/each}}
+<div class="house-list">
+  <h2>House Committees</h2>
+  {{#each model.house as |committee|}}
+    <li>{{committee.name}} ({{committee.chamber}})</li>
+  {{/each}}
+</div>
+
+<div class="senate-list">
+  <h2>Senate Committees</h2>
+  {{#each model.senate as |committee|}}
+    <li>{{committee.name}} ({{committee.chamber}})</li>
+  {{/each}}
+</div>
