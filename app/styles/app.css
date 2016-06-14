@@ -1,0 +1,13 @@
+body {
+  background-image: url(/background.jpg);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+input {
+  color: black;
+}
+
+a {
+  color: blue;
+}
